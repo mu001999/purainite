@@ -7,7 +7,8 @@ Purainite is a clean theme for Hexo
 1. Open your Hexo folder and clone Purainite
 
 ```bash
-git clone https://github.com/MU001999/purainite.git /path/to/theme/purainite
+cd $BLOG/themes
+git clone https://github.com/MU001999/purainite.git
 ```
 
 2. Set `theme` as `purainite` in `$BLOG/_config.yml`
