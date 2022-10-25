@@ -1,7 +1,8 @@
 .post {
     .post-meta {
-        text-align: right;
+        text-align: left;
         color: #818181;
+        font-size: 0.8em;
     }
 
     padding: 1.3em 2em;
@@ -21,6 +22,9 @@
     a {
         color: #616161;
         text-decoration: underline;
+        &:hover {
+            color: #111;
+        }
     }
     ul {
         padding-left: 30px;
@@ -39,7 +43,7 @@
     code, pre {
         font-size: 16px;
         background-color: #f7f7f7;
-        font-family: 'Fantasque Sans Mono', 'PT Mono', 'Source Code Pro', monospace;
+        line-height: 1.5em;
     }
     .highlight {
         position: relative;
@@ -138,5 +142,11 @@
     }
     .post-meta {
         color: #818181;
+    }
+    .post-pre {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
 }

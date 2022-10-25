@@ -5,8 +5,13 @@
             <a class="post-title-link" href="<%- url_for(post.path) %>"><%- post.title %></a>
         </div>
         <div class="post-meta">
-            <span class="post-time">于 <%- date(post.date, "YYYY 年 MM 月 DD 日") %></span>
+            <span class="post-time"><%- date(post.date, "MMMM DD, YYYY") %></span>
         </div>
+        <div class="post-pre">
+            <%- post.content %>
+        </div>
+        <p>
+        <a class="post-title-link" href="<%- url_for(post.path) %>" style="text-decoration: none;">Read more --></a>
     </article>
     <% }) %>
 </section>
