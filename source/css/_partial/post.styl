@@ -131,22 +131,33 @@
         }
     }
     .post-content {
-        margin-bottom: 1em;
         a {
             color: #616161;
             text-decoration: underline;
-        }
-        .More {
-            padding: 1em 0;
         }
     }
     .post-meta {
         color: #818181;
     }
     .post-pre {
-        display: -webkit-box;
-        -webkit-line-clamp: 1;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
+        padding-top: 0.5em;
+
+        code, pre, figure {
+            display: none;
+        }
+        p {
+            margin: 0;
+        }
+    }
+    .post-read-more {
+        padding-top: 0.5em;
+
+        a {
+            color: #616161;
+            text-decoration: none;
+            &:hover {
+                color: #111;
+            }
+        }
     }
 }

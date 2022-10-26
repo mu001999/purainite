@@ -7,11 +7,17 @@
         <div class="post-meta">
             <span class="post-time"><%- date(post.date, "MMMM DD, YYYY") %></span>
         </div>
-        <div class="post-pre">
+        <div class="post-pre" id="<%- post.title %>">
             <%- post.content %>
+            <script>
+                var html = document.getElementById('<%- post.title %>');
+                $clamp(html, {clamp: 3});
+                document.getElementById('<%- post.title %>').value = html;
+            </script>
         </div>
-        <p>
-        <a class="post-title-link" href="<%- url_for(post.path) %>" style="text-decoration: none;">Read more --></a>
+        <div class="post-read-more">
+            <a href="<%- url_for(post.path) %>">Read More</a>
+        </div>
     </article>
     <% }) %>
 </section>
